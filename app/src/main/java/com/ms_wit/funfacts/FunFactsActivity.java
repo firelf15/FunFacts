@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class FunFactsActivity extends AppCompatActivity {
 
     @Override
@@ -26,7 +28,10 @@ public class FunFactsActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fact = "Ostriches can run faster than cows.";
+                String fact = "";
+                Random randomGenerator = new Random();
+                int randomNumber = randomGenerator.nextInt(3);
+                fact = randomNumber + "";
                 factLabel.setText(fact);
             }
         };
