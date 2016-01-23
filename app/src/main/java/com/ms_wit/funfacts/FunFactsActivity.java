@@ -32,6 +32,15 @@ public class FunFactsActivity extends AppCompatActivity {
                 Random randomGenerator = new Random();
                 int randomNumber = randomGenerator.nextInt(3);
                 fact = randomNumber + "";
+                if (randomNumber == 0) {
+                    fact = "Ants stretch when they wake up in the morning.";
+
+                }
+                else if (randomNumber ==1) {
+                    fact = "Ostriches run faster than horses.";
+                } else {
+                    fact = "Olympic gold medals are mostly made of silver.";
+                }
                 factLabel.setText(fact);
             }
         };
