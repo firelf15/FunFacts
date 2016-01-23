@@ -38,8 +38,13 @@ public class FunFactsActivity extends AppCompatActivity {
                 }
                 else if (randomNumber ==1) {
                     fact = "Ostriches run faster than horses.";
-                } else {
+                }
+                else if {
                     fact = "Olympic gold medals are mostly made of silver.";
+                }
+                else {
+                    fact = "Opps. Something's gone horribly wrong. " +
+                            "It's likely the end of the world as we know it.";
                 }
                 factLabel.setText(fact);
             }
