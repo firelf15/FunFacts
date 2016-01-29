@@ -1,19 +1,13 @@
 package com.ms_wit.funfacts;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.util.Random;
+import android.widget.Toast;
 
 public class FunFactsActivity extends AppCompatActivity {
 
@@ -43,7 +37,6 @@ public class FunFactsActivity extends AppCompatActivity {
         };
 
         showFactButton.setOnClickListener(listener);
+        Toast.makeText(this, "Bazinga! It works", Toast.LENGTH_LONG).show();
     }
-
-
 }

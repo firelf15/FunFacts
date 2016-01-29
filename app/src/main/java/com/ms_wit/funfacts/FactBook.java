@@ -1,7 +1,5 @@
 package com.ms_wit.funfacts;
 
-import android.view.View;
-
 import java.util.Random;
 
 /**
