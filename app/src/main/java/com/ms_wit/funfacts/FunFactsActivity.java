@@ -3,6 +3,7 @@ package com.ms_wit.funfacts;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class FunFactsActivity extends AppCompatActivity {
+
+    public static final String TAG = FunFactsActivity.class.getSimpleName();
 
     private FactBook mFactBook = new FactBook();
     private ColorWheel mColorWheel = new ColorWheel();
@@ -37,6 +40,7 @@ public class FunFactsActivity extends AppCompatActivity {
         };
 
         showFactButton.setOnClickListener(listener);
-        Toast.makeText(this, "Bazinga! It works", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Bazinga! It works", Toast.LENGTH_LONG).show();
+        Log.d(TAG, "Bazinga! Logging from Fun Facts Activity");
     }
 }
